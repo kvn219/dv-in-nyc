@@ -1,5 +1,8 @@
 # The data behind intimate partner violence in NYC
 
+> Note: The statements expressed in this piece represent the opinions or views of the authors and not that of their employers.
+
+
 <p align="center">
   <br>
   <img src="map.gif">
@@ -63,3 +66,6 @@ pip install requirements.txt
 ```bash
 make run
 ```
+
+## Example use case
+http://nbviewer.jupyter.org/github/kvn219/ipv/blob/master/notebooks/Demo.ipynb
