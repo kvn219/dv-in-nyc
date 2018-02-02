@@ -19,15 +19,15 @@ While violent crimes in New York City has dropped precipitously since the early 
 
 Incidents of domestic violence or intimate partner violence affect every neighborhood in the city, with varying degree of incidents reported at the local level, as filed under official precinct data.
 
+This project aggregates and visualizes data on domestic violence incidents collected by the NYPD from January through September 2017––we’ll update the map to correspond with incoming data. 
+
+
 ## Sources
 [NYPD Domestic Violence Reports](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page)
 
 [NYPD Precinct Map](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page)
 
 [Map of NYCHA Developments](https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5)
-
-## Limitations
-- At the time of the project, only 9 months (Jan to Sep) data is released to the public.
 
 # Running the project
 
