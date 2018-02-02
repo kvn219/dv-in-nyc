@@ -2,13 +2,7 @@
 
 > Note: The statements expressed in this piece represent the opinions or views of the authors and not that of their employers.
 
-
-<p align="center">
-  <br>
-  <img src="map.gif">
-  <br>
-  View it <a href="http://bit.ly/2EnznPe">here.</a>
-</p>
+View map [here](http://bit.ly/2EnznPe)
 
 ## Question
 How do reported incidents of intimate partner violence differ by neighborhood and proximity to public housing?
@@ -68,4 +62,4 @@ make run
 ```
 
 ## Example use case
-http://nbviewer.jupyter.org/github/kvn219/ipv/blob/master/notebooks/Demo.ipynb
+http://nbviewer.jupyter.org/github/kvn219/ipv/blob/master/notebooks/UseCases.ipynb
