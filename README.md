@@ -1,6 +1,12 @@
 # The data behind intimate partner violence in NYC
 
-![MAP](map.png)
+<p align="center">
+  <br>
+  <img src="map.gif">
+  <br>
+  View it <a href="https://kvn219.github.io/sdgs/">here.</a>
+</p>
+
 
 ## Map
 http://bit.ly/2EnznPe
