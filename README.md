@@ -1,5 +1,4 @@
-#  Why does she stay? 
-## The data behind intimate partner violence in NYC
+# The data behind intimate partner violence in NYC
 
 ![MAP](map.png)
 
