@@ -4,12 +4,8 @@
   <br>
   <img src="map.gif">
   <br>
-  View it <a href="https://kvn219.github.io/sdgs/">here.</a>
+  View it <a href="http://bit.ly/2EnznPe">here.</a>
 </p>
-
-
-## Map
-http://bit.ly/2EnznPe
 
 ## Question
 How do reported incidents of intimate partner violence differ by neighborhood and proximity to public housing?
