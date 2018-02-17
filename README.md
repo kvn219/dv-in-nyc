@@ -1,5 +1,7 @@
 # Getting data behind intimate partner violence in NYC
 
+[![Build Status](https://travis-ci.org/kvn219/ipv.svg?branch=master)](https://travis-ci.org/kvn219/ipv)
+
 View map [here](http://bit.ly/2EnznPe)
 
 ## About
