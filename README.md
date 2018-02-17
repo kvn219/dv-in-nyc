@@ -74,6 +74,15 @@ pip install requirements.txt
 make run
 ```
 
+## Docker
+
+If you're comfortable with docker and make, you can run the following commands:
+
+```bash
+make docker_build
+make docker_run
+```
+
 ## Example use case
 
 [Create a choropleth Bokeh!](http://nbviewer.jupyter.org/github/kvn219/ipv/blob/master/notebooks/UseCases.ipynb)
