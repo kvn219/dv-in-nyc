@@ -8,7 +8,6 @@ cligj==0.4.0
 cycler==0.10.0
 descartes==1.1.0
 Fiona==1.7.11
-folium==0.5.0
 geopandas==0.3.0
 idna==2.6
 Jinja2==2.10

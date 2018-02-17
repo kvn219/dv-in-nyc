@@ -1,7 +1,10 @@
 venv:
 	venv/bin/activate
 
-save_requirements:
+install_requirements:
+	pip install -r requirements.txt
+
+freeze_requirements:
 	pip freeze > requirements.txt
 
 run: clean
@@ -9,5 +12,6 @@ run: clean
 
 clean:
 	rm -rf data/raw/*.csv
-	rm -rf data/interim/*
-	rm -rf data/processed/*
+	rm -rf data/interim/*.csv
+	rm -rf data/processed/*.csv
+	rm -rf data/processed/*.geojson
