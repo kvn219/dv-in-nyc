@@ -46,39 +46,14 @@ This project shows how I've programmatically solve these problems. I started by 
 
 To get started with the project, you need to have [Python 3](https://www.python.org/downloads/source/) and [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) set up on your local machine.
 
-**Clone the repo and setup the environment**
-
 ```bash
-git clone https://github.com/kvn219/ipv.git
-```
-
-**Move into the ipv directory**
-
-```bash
-cd ipv
-```
-
-**Create a virtual environment**
-
-```bash
-virtualenv -p python3 venv
-```
-
-**Activate the virtual environment**
-
-```bash
-source venv/bin/activate
-```
-
-**Install the required packages**
-
-```bash
+# Clone the repo and setup the environment and move into the ipv directory
+git clone https://github.com/kvn219/ipv.git && cd ipv
+# Create a virtual environment and activate the virtual environment
+virtualenv -p python3 venv && source venv/bin/activate
+# Install the required packages
 pip install requirements.txt
-```
-
-**Run the program!**
-
-```bash
+# Run the program!
 make run
 ```
 
@@ -86,15 +61,10 @@ make run
 
 If you're comfortable with docker and make, you can run the following commands:
 
-**Build the dockerfile locally**
-
 ```bash
+# Build the dockerfile locally
 make docker_build
-```
-
-**Get inside the running docker container**
-
-```bash
+# Get inside the running docker container
 make docker_run
 ```
 
