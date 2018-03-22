@@ -19,13 +19,14 @@ from utils import (
 
 
 def get_user_args():
-    ocdv_url = 'https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page'
+    # default url
+    url = 'https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page'
     parser = argparse.ArgumentParser(
         description="Downloads csv reports from OCDV's website"
     )
     parser.add_argument(
         '--url',
-        default=ocdv_url,
+        default=url,
         help="URL to OCDV's website."
     )
     args, _ = parser.parse_known_args()
@@ -71,9 +72,10 @@ def fetch_report(link):
         'Radio Runs',
         'Rape Complaints',
         'Felony Assault Complaints'
-        ]
+    ]
+    # header starts five rows down.
     df = pd.read_excel(URL, header=5)
-    assert list(df.columns) == expected_cols
+    df = df[expected_cols]
     return df.iloc[:-1, :]
 
 
@@ -147,7 +149,8 @@ def merge_reports():
     data = merge()
     precincts_list = [precinct for precinct in data['Precinct'].unique()]
     desc = [extract_precinct_desc(street) for street in precincts_list]
-    pcodes = {precinct: desc.strip() for precinct, desc in zip(precincts_list, desc)}
+    pcodes = {precinct: desc.strip()
+              for precinct, desc in zip(precincts_list, desc)}
     data['Description'] = data['Precinct'].apply(lambda x: lookup(x))
     data.to_csv('processed.csv', index=False, encoding='utf-8')
 
@@ -155,7 +158,7 @@ def merge_reports():
 def aggregate(data):
     new_col_names = ['Radio Runs', 'Monthly Avg', 'Lowest', 'Highest']
     monthly_aggregate = data.groupby(['Precinct'])['Radio Runs'].aggregate([
-                                         np.sum, np.mean, np.min, np.max])
+        np.sum, np.mean, np.min, np.max])
     monthly_aggregate.columns = new_col_names
     monthly_aggregate = monthly_aggregate.reset_index()
     monthly_aggregate['description'] = monthly_aggregate['Precinct'].apply(
@@ -189,7 +192,7 @@ def analysis(row):
         f"Precinct {pre} had a total of {totat_runs} radio runs between January and September. "
         f"An average of {avg} monthly radio runs with months ranging from as low as {lowest} to "
         f"high as {highest}. It ranked {rank} among 77 precincts in total radio runs for 2017."
-        )
+    )
     return output
 
 
@@ -200,7 +203,8 @@ if __name__ == "__main__":
     data.to_csv('./data/interim/merged.csv', index=False, encoding='utf-8')
     precincts_list = [precinct for precinct in data['Precinct'].unique()]
     desc = [extract_precinct_desc(street) for street in precincts_list]
-    pcodes = {precinct: desc.strip() for precinct, desc in zip(precincts_list, desc)}
+    pcodes = {precinct: desc.strip()
+              for precinct, desc in zip(precincts_list, desc)}
     data = aggregate(data)
     data.to_csv('./data/processed/ipv.csv', index=False, encoding='utf-8')
     map_data = transform(data)
