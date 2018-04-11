@@ -18,15 +18,11 @@ Incidents of domestic violence or intimate partner violence affect every neighbo
 
 This project aggregates and visualizes data on domestic violence incidents collected by the NYPD from January through December 2017.
 
-## Problem
-
-Data for reported rates of domestic violence in NYC are available on the NYPD's website. Unfortunately, its in a format not useful for programmatic analysis and mapping (Monthly reports are in individual csv files). If we wanted to summarize statistics for the year, we would have to manually download all the files. And merge them ourselves.
-
-Another problem with the data is the precinct information. We are only given a number between 1 and 123 to identify the precinct. Unless we're deeply invested in the NYPD, its very hard to contextualize where each precinct is in NYC.
-
 ## Project
 
-This project shows how I've programmatically solve these problems. I started by downloading and merging monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page). Next, I enriched precinct information by scraping details from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page). To prepare mapping data, I merged the aggregated data to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON). And finally I used [Carto](http://bit.ly/2EnznPe) to create a nice interactive map.
+This project downloads and merges monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page). It also enrichs precinct information by scraping details from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page). Finally, it merges the aggregated data to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON).
+
+You can see the results on a [Carto](http://bit.ly/2EnznPe) map I made!.
 
 ## Data Sources
 
