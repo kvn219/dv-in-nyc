@@ -20,9 +20,9 @@ This project aggregates and visualizes data on domestic violence incidents colle
 
 ## Project
 
-This project downloads and merges monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page). It also enrichs precinct information by scraping details from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page). Finally, it merges the aggregated data to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON).
+You can see the results on a [here!](http://bit.ly/2EnznPe)
 
-You can see the results on a [Carto](http://bit.ly/2EnznPe) map I made!.
+This project downloads and merges monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page). It also enrichs precinct information by scraping details from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page). Finally, it merges the aggregated data to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON).
 
 ## Data Sources
 
