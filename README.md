@@ -20,9 +20,15 @@ This project aggregates and visualizes data on domestic violence incidents colle
 
 ## Project
 
-You can see the results on a [here!](http://bit.ly/2EnznPe)
+<p align="center">
+    <a href="http://bit.ly/2EnznPe" alt="">
+        <img src="dv-in-nyc.png">
+    </a>
+</p>
 
-This project downloads and merges monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page). It also enrichs precinct information by scraping details from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page). Finally, it merges the aggregated data to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON).
+You can see the results [here!](http://bit.ly/2EnznPe)
+
+This project downloads monthly reports from the [NYPD Domestic Violence reports webpage](https://www1.nyc.gov/site/nypd/stats/reports-analysis/domestic-violence.page), extracts precinct information from [public precinct websites](https://www1.nyc.gov/site/nypd/bureaus/patrol/precincts/1st-precinct.page), and merges the two sources to the [boundaries of NYC's police precincts](https://data.cityofnewyork.us/api/geospatial/78dh-3ptz?method=export&format=GeoJSON).
 
 ## Data Sources
 
@@ -41,8 +47,8 @@ This project downloads and merges monthly reports from the [NYPD Domestic Violen
 To get started with the project, you need to have [Python 3](https://www.python.org/downloads/source/) and [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) set up on your local machine.
 
 ```bash
-# Clone the repo and setup the environment and move into the ipv directory
-git clone https://github.com/kvn219/ipv.git && cd ipv
+# Clone the repo and setup the environment and move into the dv-in-nyc directory
+git clone https://github.com/kvn219/dv-in-nyc.git && cd dv-in-nyc
 # Create a virtual environment and activate the virtual environment
 virtualenv -p python3 venv && source venv/bin/activate
 # Install the required packages
