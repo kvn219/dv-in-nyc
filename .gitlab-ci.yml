@@ -1,2 +1,5 @@
 before_script:
   - echo global hello world!
+run:
+  script:
+    - python test.py
