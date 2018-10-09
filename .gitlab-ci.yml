@@ -1,0 +1,2 @@
+before_script:
+  - make all
