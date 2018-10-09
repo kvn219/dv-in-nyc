@@ -1,2 +1,2 @@
 before_script:
-  - make all
+  - echo global hello world!
