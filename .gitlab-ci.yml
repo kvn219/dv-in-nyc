@@ -1,5 +1,4 @@
 before_script:
-  - echo global hello world!
+  - echo Demo of Gitlab CI/CD with Github repo.
 run:
-  script:
-    - python test.py
+  script: python test.py
