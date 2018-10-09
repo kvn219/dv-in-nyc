@@ -22,7 +22,7 @@ This project aggregates and visualizes data on domestic violence incidents colle
 
 <p align="center">
     <a href="http://bit.ly/2EnznPe" alt="">
-        <img src="dv-in-nyc.png">
+        <img src="assets/dv-in-nyc.png">
     </a>
 </p>
 
